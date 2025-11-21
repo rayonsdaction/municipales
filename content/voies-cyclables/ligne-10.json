@@ -246,6 +246,21 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "danger-passerelle-verglas",
+        "type": "danger",
+        "name": "Danger passerelle verglas",
+        "line": 10,
+        "danger": "En cas de verglas, cette passerelle devient extrêmement glissante et a déjà causé des chutes"
+      },
+      "geometry": {
+        "coordinates": [-1.6052208239787547, 48.12919603533996],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
         "id": "rp-allies",
         "line": 10,
         "name": "Giratoire Alliés / St Roch",
