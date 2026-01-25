@@ -68,3 +68,20 @@ Cela devrait s'améliorer avec la déconstruction du parking République
 ### Quais Duguay Trouin
 
 Il s'agit d'une voie générale dans le sens Est-Ouest avec un DSC dans l'autre sens, partiellement protégé par des balisettes.
+
+### Boulevard Villebois-Mareuil (sud)
+
+Cette section longe le cimetière de l'est pour rejoindre la rue de Chateaugiron. Elle est confortable et qualitative. On regrette néanmoins un stationnement anarchique régulier autour aux abords du giratoire du cimetière de l'est dans le sens nord-sud.
+
+![](/images/ligne-0/REV-Rennes-ligne-0-boulevard-villebois-mareuil-1.jpg)
+![](/images/ligne-0/REV-Rennes-ligne-0-boulevard-villebois-mareuil-2.jpg)
+
+### Rue de Chateaugiron
+
+Cette section de l'anneau cyclable Rennais se situe entre le boulevard Villebois Mareuil est le carrefour de la Carsat. Elle est globalement qualitative, bien qu'on retrouve également du stationnement anarchique le long des logements collectifs de la rue.
+Notons qu'à proximité du nouveau quartier du Landry la traversée pour rejoindre la REV a longtemps été extrêmement dangereuse (ayant notamment conduit à un accident mortel). Aujourd'hui, bien qu'imparfaite la réduction de voie par balisettes permet de diminuer significativement les risques comparé à l'aménagement précédent.
+
+|                                                                |                                                        | 
+|----------------------------------------------------------------|--------------------------------------------------------|
+| ![](/images/ligne-0/REV-Rennes-ligne-0-rue-chateaugiron-1.jpg) | ![](/images/ligne-0/REV-Rennes-ligne-0-rue-chateaugiron-2.jpg) | 
+| ![](/images/ligne-0/REV-Rennes-ligne-0-rue-chateaugiron-3.jpg) | ![](/images/ligne-0/REV-Rennes-ligne-0-rue-chateaugiron-4.jpg) | 

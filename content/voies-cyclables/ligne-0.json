@@ -782,7 +782,7 @@
         "line": 0,
         "id": "freville",
         "name": "Bd Henri Fréville (devant RM)",
-        "status": "done",
+        "status": "postponed",
         "type": "bandes-cyclables",
         "quality": "unsatisfactory",
         "link": "/rev-rennes-0#FIXME"
@@ -1364,9 +1364,11 @@
         "line": 0,
         "id": "villeboisMareuil1",
         "name": "Boulevard Villebois-Mareuil (sud)",
-        "status": "wip",
-        "type": "bandes-cyclables",
-        "link": "/rev-rennes-0#FIXME"
+        "status": "done",
+        "type": "bilaterale",
+        "quality": "satisfactory",
+        "doneAt":"01/12/2025",
+        "link": "/rev-rennes-0#boulevard-villebois-mareuil-sud"
       },
       "geometry": {
         "type": "LineString",
