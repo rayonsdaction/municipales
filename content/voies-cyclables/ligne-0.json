@@ -350,8 +350,9 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "NantesPilate",
         "line": 0,
-        "name": "rue de Nantes (entre Pilate & La Madeleine)",
+        "name": "rue de Nantes (entre Pilate et Madeleine)",
         "status": "postponed",
         "type": "bandes-cyclables",
         "link": "/rev-rennes-0#FIXME"
@@ -426,6 +427,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "QuaiChateaubriand",
         "name": "Quai Chateaubriand",
         "status": "postponed",
         "type": "velorue",
@@ -448,6 +450,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "QuaiDujardin",
         "name": "Quais Dujardin",
         "status": "done",
         "type": "bandes-cyclables",
@@ -471,6 +474,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "quaisArtistideBriand",
         "name": "quais Aristide Briand (centre)",
         "status": "done",
         "type": "bandes-cyclables",
@@ -494,6 +498,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "avenueMaginotChateau1",
         "name": "Avenue Sergent Maginot + François Chateau",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -536,6 +541,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "avenueMaginotChateau2",
         "name": "Sergeant Maginot + début François Chateau",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -576,6 +582,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "traverseeBriandMaginot",
         "name": "traversée Aristide Briand - Sergent Maginot",
         "status": "done",
         "type": "bandes-cyclables",
@@ -601,6 +608,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "maginot",
         "name": "Sergent Maginot",
         "status": "done",
         "type": "bandes-cyclables",
@@ -623,6 +631,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "giratoireFFONU",
         "name": "Giratoire des Forces de l'ONU",
         "status": "done",
         "type": "bilaterale",
@@ -671,6 +680,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "albert1er1",
         "name": "Bd Albert 1er (Ouest piscine Bréquigny)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -693,6 +703,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "albert1er2",
         "name": "Bd Albert 1er (devant piscine Bréquigny)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -727,6 +738,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "giratoireBrequigny",
         "name": "Giratoire de la piscine de Bréquigny",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -768,6 +780,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "freville",
         "name": "Bd Henri Fréville (devant RM)",
         "status": "done",
         "type": "bandes-cyclables",
@@ -792,7 +805,8 @@
       "type": "Feature",
       "properties": {
         "line": 0,
-        "name": "Rue de l'Alma entre bd Baumont & Clémenceau",
+        "id": "almaBeaumont",
+        "name": "Rue de l'Alma entre bd Beaumont & Clémenceau",
         "status": "done",
         "type": "bilaterale",
         "quality": "unsatisfactory",
@@ -829,6 +843,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "isly",
         "name": "Rue d'Isly",
         "status": "postponed",
         "type": "aucun",
@@ -857,6 +872,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "joffre",
         "name": "Rue Maréchal Joffre",
         "status": "postponed",
         "type": "aucun",
@@ -878,6 +894,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "yser",
         "name": "Bd de l'Yser",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -916,6 +933,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "leroux1",
         "name": "Bd Oscar Leroux (entre Fréville et Le Moine)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -962,6 +980,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "giratoireLeroux",
         "name": "Giratoire Leroux",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1007,6 +1026,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "leroux2",
         "name": "rue Oscar Leroux (Est) entre les 2 giratoires",
         "status": "postponed",
         "type": "aucun",
@@ -1031,6 +1051,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "giratoireGrimaultLeroux",
         "name": "Giratoire Grimault / Leroux",
         "status": "done",
         "type": "bilaterale",
@@ -1083,7 +1104,8 @@
       "type": "Feature",
       "properties": {
         "line": 0,
-        "name": "Bd Grimault (écolle Guillevic)",
+        "id": "grimault1",
+        "name": "Bd Grimault (école Guillevic)",
         "status": "postponed",
         "type": "bandes-cyclables",
         "link": "/rev-rennes-0#FIXME"
@@ -1115,6 +1137,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "grimault2",
         "name": "Bd Grimault (Est)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1145,6 +1168,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "grimault3",
         "name": "Grimault / Pologne",
         "status": "done",
         "type": "bilaterale",
@@ -1189,6 +1213,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "hutin1",
         "name": "Bd Hutin-Desgrées",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1220,6 +1245,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "giratoireRonceray",
         "name": "Giratoire Ronceray (bd Hutin-Desgrées)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1265,7 +1291,8 @@
       "type": "Feature",
       "properties": {
         "line": 0,
-        "name": "Bd Huttin-Desgrées (jusqu'à rue Chateaugiron)",
+        "id": "hutin2",
+        "name": "Bd Hutin-Desgrées (jusqu'à rue Chateaugiron)",
         "status": "postponed",
         "type": "bandes-cyclables",
         "link": "/rev-rennes-0#FIXME"
@@ -1296,11 +1323,12 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "chateaugiron",
         "name": "Rue de Chateaugiron (Landry)",
         "status": "done",
         "type": "bidirectionnelle",
         "quality": "satisfactory",
-        "link": "/rev-rennes-8#cours-du-professeur-jean-bernard"
+        "link": "/rev-rennes-0#rue-de-chateaugiron"
       },
       "geometry": {
         "type": "LineString",
@@ -1334,6 +1362,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "villeboisMareuil1",
         "name": "Boulevard Villebois-Mareuil (sud)",
         "status": "wip",
         "type": "bandes-cyclables",
@@ -1364,6 +1393,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "villeboisMareuil2",
         "name": "Cimetière de l'Est (Villebois-Mareuil)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1409,6 +1439,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "villeboisMareuil3",
         "name": "Bd Villebois-Mareuil (nord)",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -1467,6 +1498,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "manquant1",
         "name": "Boucle manquante rev Rennes",
         "status": "expected",
         "type": "inconnu",
@@ -1668,6 +1700,7 @@
       "type": "Feature",
       "properties": {
         "line": 0,
+        "id": "manquant2",
         "name": "Boucle manquante accès REV Acigné",
         "status": "expected",
         "type": "inconnu",
