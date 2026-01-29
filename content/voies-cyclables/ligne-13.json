@@ -6,6 +6,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "deGaulle",
         "name": "Centre-ville de St Grégoire (rue Général de Gaulle)",
         "status": "postponed",
         "type": "bilaterale",
@@ -47,6 +48,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "franchissementRocade",
         "name": "Franchissement rocade jusqu'au boulevard de la Boutière",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -75,6 +77,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "plesse",
         "name": "Rond point de la Plesse jusqu'à la station service",
         "status": "postponed",
         "type": "aucun",
@@ -145,6 +148,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "ligneStMalo",
         "name": "Au dessus de la ligne St Malo",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -182,6 +186,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "grosMalhon",
         "name": "Liaison Gros Malhon / halage",
         "status": "postponed",
         "type": "aucun",
@@ -204,6 +209,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "halageOuest",
         "name": "halage Ouest en face des prairies St Martin",
         "status": "done",
         "type": "voie-verte",
@@ -249,6 +255,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "passerelleBaciocchi",
         "name": "passerelle Élisa Napoléone Baciocchi",
         "status": "done",
         "type": "voie-verte",
@@ -269,6 +276,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "liaisonMontgermont",
         "name": "Liaison Montgermont",
         "status": "expected",
         "type": "bidirectionnelle"
@@ -419,6 +427,7 @@
       "type": "Feature",
       "properties": {
         "line": 13,
+        "id": "liaisonMelesse",
         "name": "Liaison vers réseau CD35 Melesse",
         "status": "expected",
         "type": "bidirectionnelle"

@@ -6,6 +6,7 @@
       "type": "Feature",
       "properties": {
         "line": 10,
+        "id": "rosalind",
         "name": "Rue Rosalind Franklin sud, depuis av Leclerc",
         "status": "postponed",
         "type": "aucun",
@@ -24,6 +25,7 @@
       "type": "Feature",
       "properties": {
         "line": 10,
+        "id": "beaulieuFranklin",
         "name": "Beaulieu (rue Rosalind Franklin)",
         "status": "postponed",
         "type": "bandes-cyclables",

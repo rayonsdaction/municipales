@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "haltePoterie",
         "name": "Rue de Chateaugiron (halte La Poterie)",
         "status": "done",
         "type": "bidirectionnelle",
@@ -34,7 +35,8 @@
       "type": "Feature",
       "properties": {
         "line": 8,
-        "name": "Rue de Chateaugiron (devant D4)",
+        "id": "decathlon",
+        "name": "Rue de Chateaugiron (devant Décathlon)",
         "status": "done",
         "type": "bidirectionnelle",
         "quality": "satisfactory",
@@ -66,10 +68,11 @@
       "type": "Feature",
       "properties": {
         "line": 8,
-        "name": "Rue André Bonin (embranchement depuis rue Chateaugiron)",
+        "id": "andreBonnin",
+        "name": "Rue André Bonnin (embranchement depuis rue Chateaugiron)",
         "status": "postponed",
         "type": "bandes-cyclables",
-        "link": "/rev-rennes-8#rue-andré-bonin"
+        "link": "/rev-rennes-8#rue-andré-bonnin"
       },
       "geometry": {
         "type": "LineString",
@@ -90,10 +93,11 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "giratoireBonnin",
         "name": "Giratoire rue André Bonnin",
         "status": "postponed",
         "type": "aucun",
-        "link": "/rev-rennes-8#rue-andré-bonin"
+        "link": "/rev-rennes-8#rue-andré-bonnin"
       },
       "geometry": {
         "type": "LineString",
@@ -144,11 +148,12 @@
       "type": "Feature",
       "properties": {
         "line": 8,
-        "name": "Rue André Bonin (devant la boulangerie et les sushis)",
+        "id": "rueBonninBoulangerie",
+        "name": "Rue André Bonnin (devant la boulangerie et les sushis)",
         "status": "done",
         "type": "bidirectionnelle",
         "quality": "satisfactory",
-        "link": "/rev-rennes-8#rue-andré-bonin"
+        "link": "/rev-rennes-8#rue-andré-bonnin"
       },
       "geometry": {
         "type": "LineString",
@@ -171,6 +176,7 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "poilus",
         "name": "Chemin des Poilus",
         "status": "done",
         "type": "bidirectionnelle",
@@ -196,6 +202,7 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "vergerOuest",
         "name": "Rue du verger (ouest)",
         "status": "done",
         "type": "velorue",
@@ -233,6 +240,7 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "vergerEst",
         "name": "Rue du verger (est)",
         "status": "done",
         "type": "velorue",
@@ -262,7 +270,8 @@
       "type": "Feature",
       "properties": {
         "line": 8,
-        "name": "Expected",
+        "id": "expectedChantepie1",
+        "name": "Liaison Chantepie - Cesson",
         "status": "expected",
         "type": "bidirectionnelle",
         "link": "/rev-rennes-8#expected"
@@ -353,7 +362,8 @@
       "type": "Feature",
       "properties": {
         "line": 8,
-        "name": "Expected",
+        "id": "expectedChantepie2",
+        "name": "Liaison Chantepie - Vern",
         "status": "expected",
         "type": "bidirectionnelle",
         "link": "/rev-rennes-8#expected"
@@ -412,6 +422,7 @@
       "type": "Feature",
       "properties": {
         "line": 8,
+        "id": "expectedChantepie3",
         "name": "Liaison attendue direction Domloup (jonction CD35)",
         "status": "expected",
         "type": "bidirectionnelle",

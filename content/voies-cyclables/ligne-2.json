@@ -6,7 +6,8 @@
       "type": "Feature",
       "properties": {
         "line": 2,
-        "name": "rue de Brest entre les Lices et Villeajan + remontée jusqu'à la dalle Kennedy",
+        "id": "lices",
+        "name": "rue de Brest entre les Lices et Villejean et remontée jusqu'à la dalle Kennedy",
         "status": "postponed",
         "type": "bandes-cyclables",
         "link": "/rev-rennes-2#FIXME"
@@ -52,6 +53,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "kennedy",
         "name": "de Kennedy à tunnel",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -87,6 +89,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "tunnel",
         "name": "tunnel sous la rocade",
         "status": "done",
         "doneAt": "01/06/2023",
@@ -121,6 +124,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "parc",
         "name": "parc de Villejean",
         "status": "done",
         "doneAt": "01/06/2023",
@@ -184,6 +188,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "velorue",
         "name": "Vélorue rurale le long de la N12",
         "status": "done",
         "doneAt": "01/06/2023",
@@ -246,6 +251,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "voieVerteN12",
         "name": "Voie verte le long de la N12",
         "status": "done",
         "doneAt": "01/06/2023",
@@ -297,6 +303,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "touches",
         "name": "Avenue des Touches",
         "status": "done",
         "doneAt": "01/06/2023",
@@ -407,6 +414,7 @@
       "type": "Feature",
       "properties": {
         "line": 2,
+        "id": "trieux",
         "name": "Boulevard du Trieux",
         "status": "done",
         "type": "bidirectionnelle",

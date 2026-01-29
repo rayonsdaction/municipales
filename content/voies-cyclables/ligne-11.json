@@ -6,6 +6,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "bellefontaine",
         "name": "bd alliés entre Bellefontaine & Cesson/Viasilva",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -42,6 +43,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "baillee",
         "name": "De Cesson-Viasilva à La Baillée",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -74,6 +76,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "ouestBaillee",
         "name": "Ouest de La Baillée",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -92,6 +95,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "cheminAgricoleBaillee",
         "name": "chemin agricole La Baillée",
         "status": "postponed",
         "type": "velorue",
@@ -120,6 +124,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "laGravelle",
         "name": "La Gravelle Ouest Rocade",
         "status": "done",
         "type": "voie-verte",
@@ -170,6 +175,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "passerelleRocade",
         "name": "passerelle au dessus de la rocade (et jonction avec le chemin vers Cesson)",
         "status": "done",
         "type": "voie-verte",
@@ -219,6 +225,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "velorueThorigne",
         "name": "Vélorue thorigne",
         "status": "done",
         "type": "velorue",
@@ -263,6 +270,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "liaisonMairie",
         "name": "Liaison Thorigné Fouillard mairie",
         "status": "done",
         "type": "bidirectionnelle",
@@ -329,6 +337,7 @@
       "type": "Feature",
       "properties": {
         "line": 11,
+        "id": "liaisonBetton",
         "name": "Liaison Betton",
         "status": "expected",
         "type": "bidirectionnelle"

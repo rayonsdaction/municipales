@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "henriGregoire",
         "name": "Rue Abbé Henri Grégoire",
         "status": "postponed",
         "type": "aucun",
@@ -27,6 +28,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "nordViaduc",
         "name": "Nord du viaduc du métro : parc + rue Emile Liffré",
         "status": "postponed",
         "type": "voie-bus",
@@ -57,6 +59,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "viaduc",
         "name": "Viaduc du métro",
         "status": "done",
         "doneAt": "01/01/2000",
@@ -95,6 +98,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "viaducDescente",
         "name": "Début de la boucle descendant du viaduc au Blosne",
         "status": "done",
         "doneAt": "01/01/2000",
@@ -129,6 +133,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "velorueAtelier",
         "name": "Vélorue de fait contournant le garage atelier du métro",
         "status": "done",
         "doneAt": "01/01/2000",
@@ -202,6 +207,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "soeuvres",
         "name": "Rue du Bois de Soeuvres (nord)",
         "status": "done",
         "doneAt": "01/06/2021",
@@ -256,6 +262,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "soeuvresSud",
         "name": "Rue du Bois de Soeuvres (sud)",
         "status": "done",
         "doneAt": "01/06/2021",
@@ -296,6 +303,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "hallerais",
         "name": "De la Hallerais au giratoire du Val d'Orson",
         "status": "done",
         "doneAt": "01/01/2000",
@@ -343,6 +351,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "giratoireValOrson",
         "name": "Giratoire du Val d'Orson",
         "doneAt": "01/10/2022",
         "status": "done",
@@ -393,6 +402,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "sudGiratoireValOrson",
         "name": "Sud giratoire du Val d'Orson",
         "doneAt": "01/10/2022",
         "status": "done",
@@ -422,6 +432,7 @@
       "type": "Feature",
       "properties": {
         "line": 15,
+        "id": "d286-1",
         "name": "D286",
         "doneAt": "01/10/2022",
         "status": "done",
@@ -467,8 +478,8 @@
       "type": "Feature",
       "properties": {
         "line": 15,
-        "name": "D286",
-        "doneAt": "01/10/2022",
+        "id": "expectedNoyal",
+        "name": "Liaison Vern - Noyal",
         "status": "expected",
         "type": "aucun",
         "link": "/rev-rennes-15#FIXME"

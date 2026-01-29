@@ -546,21 +546,15 @@
       }
     },
 
-
-
-
-
-
     {
       "type": "Feature",
       "properties": {
-        "id": "bidir-contournement-superette",
+        "id": "liaisonChartres",
         "line": 7,
-        "name": "Liaison Chartres",
+        "name": "Liaison Chartres - Noyal",
         "status": "expected",
-        "doneAt":"01/01/2023",
         "type": "bidirectionnelle",
-        "link": "/rev-rennes-7#piste-bidirectionnelle-rennes-noyal"
+        "link": "/rev-rennes-7#fixme"
       },
       "geometry": {
         "type": "LineString",

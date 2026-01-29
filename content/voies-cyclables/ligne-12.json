@@ -6,6 +6,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "belAir",
         "name": "Bel Air",
         "status": "done",
         "type": "bidirectionnelle",
@@ -34,6 +35,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "liberte",
         "name": "Voie de la Liberté",
         "status": "done",
         "type": "bidirectionnelle",
@@ -56,6 +58,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "passageNiveauLiberte",
         "name": "passage à niveau à voie de la Liberté",
         "status": "planned",
         "type": "bidirectionnelle",
@@ -74,6 +77,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "franchissementVoieFerree",
         "name": "Franchissement voie ferrée",
         "status": "wip",
         "type": "bidirectionnelle",
@@ -92,6 +96,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "maisonBlanche",
         "name": "Maison Blanche",
         "status": "postponed",
         "type": "voie-verte",
@@ -122,6 +127,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "laTrudais",
         "name": "Du giratoire La Trudais au sud de Maison Blanche",
         "status": "done",
         "type": "voie-verte",
@@ -141,6 +147,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "rocadeGiratoireTrudais",
         "name": "entre rocade et giratoire du chemin de la Trudais",
         "status": "done",
         "type": "bidirectionnelle",
@@ -163,6 +170,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "franchissemeentRocade",
         "name": "Franchissement de la rocade",
         "status": "done",
         "type": "bidirectionnelle",
@@ -187,6 +195,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "CouleeVerteNord",
         "name": "vers la Coulée verte - nord",
         "status": "postponed",
         "type": "voie-verte",
@@ -221,6 +230,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "couleeVerteHopital",
         "name": "coulée verte (derrière l'hopital de la Tauvrais)",
         "status": "postponed",
         "type": "voie-verte",
@@ -249,6 +259,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "couleeVertePrairies",
         "name": "coulée verte (arrivée sur Prairies St Martin)",
         "status": "postponed",
         "type": "voie-verte",
@@ -337,6 +348,7 @@
       "type": "Feature",
       "properties": {
         "line": 12,
+        "id": "liaisonStGregoire",
         "name": "Liaison Saint-Grégoire",
         "status": "expected",
         "type": "bidirectionnelle"

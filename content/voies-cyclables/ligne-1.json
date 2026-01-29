@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "line": 1,
+        "id": "rueSaintMalo",
         "name": "Rue de Saint-Malo",
         "status": "postponed",
         "type": "bandes-cyclables",
@@ -104,6 +105,7 @@
       "type": "Feature",
       "properties": {
         "line": 1,
+        "id": "rueSaintMaloRobiquette",
         "name": "Rue Saint-Malo au Boulevard de la Robiquette",
         "status": "done",
         "type": "bidirectionnelle",
@@ -148,7 +150,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "db-robiquette-rennes",
+        "id": "bd-robiquette-rennes",
         "line": 1,
         "name": "Boulevard de la Robiquette",
         "status": "postponed",
@@ -466,6 +468,7 @@
       "type": "Feature",
       "properties": {
         "line": 1,
+        "id": "liaisonPace",
         "name": "Liaison Pacé",
         "status": "expected",
         "type": "bidirectionnelle"
@@ -836,6 +839,7 @@
       "type": "Feature",
       "properties": {
         "line": 1,
+        "id": "montgerval",
         "name": "Liaison Montgerval réseau CD35. Pas officiellement REV",
         "status": "expected",
         "type": "bidirectionnelle",

@@ -5,7 +5,8 @@
       "type": "Feature",
       "properties": {
         "line": 14,
-        "name": "petite bidir des 3 marchés",
+        "id": "bidi3marches",
+        "name": "piste bidirectionnelle des 3 marchés",
         "status": "done",
         "type": "bidirectionnelle",
         "quality": "satisfactory",
@@ -35,6 +36,7 @@
       "type": "Feature",
       "properties": {
         "line": 14,
+        "id": "voieVerte",
         "name": "Petite route puis voie verte depuis les 3 marchés",
         "status": "done",
         "type": "velorue",
@@ -75,6 +77,7 @@
       "type": "Feature",
       "properties": {
         "line": 14,
+        "id": "epuration",
         "name": "Station d'épuration",
         "status": "done",
         "type": "voie-verte",
@@ -107,6 +110,7 @@
       "type": "Feature",
       "properties": {
         "line": 14,
+        "id": "arriveeVezin",
         "name": "Arrivée à Vezin",
         "status": "done",
         "type": "aucun",
@@ -132,10 +136,10 @@
       "type": "Feature",
       "properties": {
         "line": 14,
-        "name": "Liaison Pacé",
+        "id": "liaisonVezinPace",
+        "name": "Liaison Vezin Pacé",
         "status": "expected",
-        "type": "bidirectionnelle",
-        "quality": "satisfactory"
+        "type": "bidirectionnelle"
       },
       "geometry": {
         "type": "LineString",

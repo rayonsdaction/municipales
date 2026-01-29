@@ -20,6 +20,7 @@
       "properties": {
         "line": 5,
         "name": "Rue de la Pilate",
+        "id": "ruePilate",
         "status": "done",
         "doneAt": "01/05/2025",
         "type": "velorue",
@@ -49,6 +50,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "rueJeanPont",
         "name": "Rue Jean Pont",
         "status": "wip",
         "type": "velorue",
@@ -87,6 +89,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "rueJeanneBohec",
         "name": "Rue Jeanne Bohec",
         "doneAt": "01/08/2025",
         "status": "done",
@@ -130,6 +133,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "bvdMermoz",
         "name": "Boulevard Jean Mermoz",
         "status": "done",
         "doneAt": "01/01/2023",
@@ -175,6 +179,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "rogerDodin",
         "name": "Avenue Roger Dodin",
         "status": "done",
         "type": "bidirectionnelle",
@@ -235,6 +240,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "laMorinais",
         "name": "La Morinais",
         "status": "done",
         "doneAt": "01/03/2025",
@@ -295,6 +301,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "martiniere",
         "name": "Rue de la Martinière",
         "status": "done",
         "doneAt": "01/05/2025",
@@ -320,6 +327,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "daurat",
         "name": "Rue Didier Daurat",
         "status": "done",
         "doneAt": "01/05/2025",
@@ -343,6 +351,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "landriaux",
         "name": "Chemin des Landriaux",
         "status": "done",
         "doneAt": "01/01/2020",
@@ -426,6 +435,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "pottier",
         "name": "Boulevard Eugène Pottier",
         "status": "done",
         "doneAt": "01/01/2022",
@@ -497,6 +507,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "valles1",
         "name": "Place Jules Valles",
         "status": "wip",
         "type": "bidirectionnelle",
@@ -522,6 +533,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "valles2",
         "name": "Rue Jules Valles",
         "status": "done",
         "doneAt": "01/06/2025",
@@ -571,6 +583,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "parcExpo",
         "name": "Parc expo",
         "status": "done",
         "doneAt": "01/06/2025",
@@ -614,6 +627,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "reynel",
         "name": "Le Reynel",
         "status": "wip",
         "type": "bidirectionnelle",
@@ -642,6 +656,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "accesKerLann",
         "name": "Accès Ker Lann",
         "status": "wip",
         "type": "bidirectionnelle",
@@ -674,6 +689,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "traverseeCampusNord",
         "name": "Traversée avenue Ker Lann au Nord du campus",
         "status": "wip",
         "type": "bandes-cyclables",
@@ -730,6 +746,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "campus",
         "name": "Campus de Ker Lann",
         "status": "wip",
         "type": "bandes-cyclables",
@@ -756,6 +773,7 @@
       "type": "Feature",
       "properties": {
         "line": 5,
+        "id": "charreau",
         "name": "Nord rue Pierre Charreau",
         "status": "wip",
         "type": "bandes-cyclables",

@@ -846,6 +846,7 @@
       "type": "Feature",
       "properties": {
         "line": 6,
+        "id": "liaisonKerLann",
         "name": "Liaison Ker Lann",
         "status": "expected",
         "type": "bidirectionnelle"

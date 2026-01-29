@@ -12,7 +12,7 @@ cover: /images/ligne-8/rev8-passage-a-niveau.jpg
 
 Le REV suit la rue de Châteaugiron.
 Arrivé à Chantepie, il se divise en deux branches
-* l'une rue André Bonin va jusqu'à la mairie en centre ville
+* l'une rue André Bonnin va jusqu'à la mairie en centre ville
 * l'autre suit le chemin des Poilus puis la rue du Verger afin de se connecter à terme sur le REV départemental venant de Chateaugiron
 
 ### Rue de Chateaugiron
@@ -40,7 +40,7 @@ Celles-ci ont été effacées et des logos vélos et doubles chevront ont été 
 C'est donc devenue une vélorue.
 
 
-### Rue André Bonin
+### Rue André Bonnin
 
 Il s'agit d'un embranchement du REV pour accéder au centre ville.
 Sur la partie Ouest :
