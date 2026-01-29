@@ -11,7 +11,7 @@
                 :alt="`logo ${getAssoName()}`"
             >
             <div class="text-container">
-              <div class="main-title">Suivi du Réseau Express Vélo</div>
+              <div class="main-title">Municipales 2026</div>
               <div class="sub-title">par {{getAssoName()}}</div>
             </div>
           </NuxtLink>

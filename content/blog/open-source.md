@@ -1,59 +1,52 @@
 ---
-title: Tutoriel - Dupliquer Cyclopolis dans sa ville
-description: Guide à destination des associations qui souhaiteraient réutiliser Cyclopolis pour suivre les infrastructures cyclables de leur ville.
-imageUrl: https://cyclopolis.lavilleavelo.org/cyclopolis.png
+title: Tutoriel - Dupliquer Municipales 2026 pour votre ville
+description: Guide à destination des associations ou citoyens souhaitant réutiliser Municipales 2026 pour suivre les engagements des candidats aux élections municipales de 2026.
+imageUrl: https://www.mce-info.org/wp-content/uploads/2024/02/25-Rayons-d-action.webp
 ---
 
-## Cyclopolis est (et restera) Open Source
+## Municipales 2026 est (et restera) Open Source
 
-Depuis le tout début de son histoire, en septembre 2022, Cyclopolis est un projet Open Source. Cela signifie que tout le code de la plateforme est public et réutilisable par tous et toutes.
+Municipales 2026 est un projet Open Source conçu pour permettre à chacun·e de suivre les engagements des candidats aux élections municipales. Tout le code est public et réutilisable librement.
 
-Le code est directement disponible sur [GitHub](https://github.com/lavilleavelo/cyclopolis) et réutilisable sous [licence MIT](https://github.com/benoitdemaegdt/voieslyonnaises/blob/main/LICENSE.md).
+Le code est disponible sur [GitHub](https://github.com/rayonsdaction/municipales) sous [licence MIT](https://github.com/rayonsdaction/municipales/blob/main/LICENSE.md).
 
-Une association (ou même un particulier) peut donc tout à fait copier le code de la plateforme, le modifier, l'adapter à sa ville, et le publier sous un autre nom.
+Une association, un collectif ou un·e citoyen·ne peut donc copier, modifier et adapter ce projet à sa ville, puis le publier sous un autre nom.
 
-## Combien ça coûte d'avoir son propre Cyclopolis ?
+---
 
-La version actuelle de Cyclopolis demande peu de ressources et coûte donc très peu cher à faire tourner.
+## Combien ça coûte d’avoir sa propre instance de Municipales 2026 ?
 
-En particulier :
-- il n'y a pas de base de données (les données sont stockées sur Github).
-- il n'y a pas de serveur dédié.
-- il n'y a pas besoin de logiciel tiers payant.
+La plateforme est conçue pour être légère et peu coûteuse :
+- Pas de base de données dédiée (les données sont stockées sur GitHub).
+- Pas de serveur payant.
+- Pas de logiciel tiers onéreux.
 
-Aujourd'hui, le seul coût financier est le nom de domaine (~10€/an).
+Le seul coût financier est l’achat d’un nom de domaine (~10€/an).
 
-Voici la liste des outils tiers utilisés :
-- [GitHub](https://github.com) pour le stockage des données et du code. Gratuit.
-- [Netlify](https://www.netlify.com) pour l'hébergement du site. Gratuit (free tier très largement suffisant).
-- [Etalab](https://openmaptiles.geo.data.gouv.fr/) pour les cartes. Gratuit.
-- [Geojson.io](https://geojson.io) pour le tracé des pistes cyclables. Gratuit.
-- [Beam Analytics](https://beamanalytics.io/) pour le suivi d'audience. Gratuit (free tier très largement suffisant).
-- ~[Cloudinary](https://cloudinary.com/) pour le stockage des images. Gratuit.~
-- Serveur d'image de La Ville à Vélo pour le stockage des images. Payant mais mutualisé avec les autres besoins de l'association.
+### Outils tiers utilisés :
+- [GitHub](https://github.com) : stockage du code et des données. Gratuit.
+- [Netlify](https://www.netlify.com) ou [Vercel](https://vercel.com) : hébergement du site. Offre gratuite largement suffisante.
+- [Etalab](https://openmaptiles.geo.data.gouv.fr/) : cartes (si besoin). Gratuit.
+- [Beam Analytics](https://beamanalytics.io/) : suivi d’audience. Gratuit (offre free tier).
 
-## Comment créer ma version de Cyclopolis ?
+---
 
-⚠️ *Attention, à partir d'ici ça devient un peu plus technique. L'aide d'un(e) développeur(euse) sera nécessaire.*
+## Comment créer ma version de Municipales 2026 ?
 
-### 1 - Contactez-nous
+⚠️ *Cette partie est technique. L’aide d’un·e développeur·euse peut être utile.*
 
-Ça nous fait toujours plaisir de savoir que notre plateforme sert à d'autres personnes.
-N'hésitez pas à nous envoyer un email. On pourra également vous donner quelques conseils.
+### 1. Contactez-nous
+N’hésitez pas à nous envoyer un message pour échanger sur votre projet. On pourra vous donner des conseils et des retours d’expérience.
 
-### 2 - Visualisez ce tutoriel vidéo pas à pas
-En partenariat avec la FUB, nous avons organisé en juin 2024 un webinaire dédié au déploiement de la plateforme open source « Cyclopolis » dans les autres agglomérations françaises de manière à aider le plaidoyer local.
+### 2. Tutoriel vidéo (à venir)
+*[Optionnel : si tu prévois de créer un tutoriel vidéo, ajoute ici un lien ou une mention.]*
 
-Vous pouvez retrouver la vidéo complète du tutoriel ci-dessous :
-[![Vidéo Tutoriel Cyclopolis](https://img.youtube.com/vi/vZ-tY7TG7PM/0.jpg)](https://www.youtube.com/watch?v=vZ-tY7TG7PM)
+### 3. Étapes techniques
 
-*En complément, vous pouvez retrouver ce tutoriel étape par étape ci-dessous.*
-
-### 2.1 - Clonez le site
-
-Vous pouvez cloner le site directement sur votre poste local.
-```
-git clone git@github.com:lavilleavelo/cyclopolis.git
+#### 3.1 Clonez le dépôt
+```bash
+git clone git@github.com:rayonsdaction/municipales.git
+cd municipales2026
 ```
 
 Puis installer les dépendances
@@ -66,37 +59,11 @@ Puis le faire tourner en local
 npm run dev
 ```
 
-ça y est : vous avez votre clone de Cyclopolis qui tourne sur votre poste.
+ça y est : vous avez votre clone de Municipales qui tourne sur votre poste.
 ```
 http://localhost:3000
 ```
 
-### 2.2 - Adaptez Cyclopolis à votre ville
-
-#### Centrez la carte sur votre ville
-
-Depuis le fichier **Map.vue**, remplacez les coordonnées de Lyon par celles de votre ville.
-```
-center: [4.8312188, 45.757198]
-```
-
-#### Modifiez les données
-
-Toutes les données de Cyclopolis sont stockées dans le code, dans le dossier **/content**.
-
-On y retrouve plusieurs sous-dossiers :
-- **/blog** - contient les articles du blog.
-- **/compteurs** - contient le relevé des compteurs vélo lyonnais.
-- **/voies-cyclables** - contient le tracé et le descriptif de chacune des Voies Lyonnaises (pistes cyclables structurantes).
-
-
-Le plus intéressant ici, c'est donc le dossier **/content/voies-cyclables**. Il contient :
-- des fichiers **json**, qui contiennent de la donnée structurée (le tracé des pistes cyclables).
-- des fichiers markdown **.md**, qui contiennent du texte (les pages descriptives des infrastructures cyclables).
-
-Il va donc vous falloir éditer tous ces fichiers pour les adapter à votre ville et à vos infrastructures cyclables.
-
-Pour modifier les tracés des pistes cyclables, vous pouvez utiliser un outil comme [geojson.io](https://geojson.io). À noter que c'est assez long et laborieux, il y a peut-être des outils plus adaptés qui existent ...
 
 #### Déployez votre toute nouvelle plateforme
 
@@ -105,7 +72,7 @@ Une fois que vous avez adapté les données à votre ville, vous pouvez déploye
 On recommande d'utiliser [Netlify](https://www.netlify.com) ou [Vercel](https://vercel.com/) pour l'hébergement. L'offre gratuite de ces 2 plateformes est très généreuse et suffira largement pour ce genre de projet.
 Par ailleurs, elles offrent une excellente intégration avec Github. Ainsi, à chaque modification de vos données (ou commit), les changements seront "live" en 30-40 secondes.
 
-Voici par exemple la configuration de Cyclopolis sur Netlify (section Build & Deploy):
+Voici par exemple la configuration de Municipales sur Netlify (section Build & Deploy):
 ```
 Build command : npm run generate
 Publish directory : dist
@@ -121,10 +88,3 @@ Vous pouvez ensuite :
 ## Conclusion
 
 On vous souhaite tout le meilleur pour votre projet ! 🎉
-
-
-
-
-
-
-

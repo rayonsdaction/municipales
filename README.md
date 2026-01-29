@@ -1,32 +1,20 @@
-# Observatoire & Plaidoyer du Réseau Express Vélo Rennais
+# Engagements Vélo & Marche Municipales 2026
 
 ## De quoi s'agit-il ?
-Il s'agit d'une plateforme web permettant la visualisation de l'état actuel du Réseau Express Vélo Rennais et de ses manques.
+Il s'agit d'une plateforme web permettant de visualiser et suivre les engagements des candidats aux élections municipales de 2026, ainsi que, à terme, leur état d'avancement.
 
-Ce projet est un fork de Cyclopolis, projet développé par des bénévoles de l'association lyonnaise "La Ville à Vélo", plateforme qui a pour objectif principal de suivre le développement du projet des "Voies Lyonnaises".
+Ce projet est conçu pour être réutilisable par des associations souhaitant suivre les engagements des candidats aux élections locales.
 
-On y retrouve en particulier :
-- une carte intéractive permettant de visualiser les tracés des voies cyclables.
-- une page détaillée sur chacune des voies cyclables.
-
-Plus d'informations sur Cyclopolis : https://github.com/lavilleavelo/cyclopolis
-
-Pour le tracés des REV de Rennes Métropole, cette carte propose le tracé exact à partir des données open data de RM : https://umap.openstreetmap.fr/fr/map/schema-directeur-velo-sdv-de-rennes-metropole_995995
-Les données sont extraites de https://data.rennesmetropole.fr/explore/dataset/sd_velo_iti_2018/information/
-
-## Aide aux contributeurs/trices non développeurs/euses
-
-le `status` de chaque tronçon peut prendre les valeurs définies [ici](types/index.ts#L13)
-
-le `type` de chaque tronçon peut prendre les valeurs définies [ici](types/index.ts#L1)
-
+---
 
 ## Quelques détails techniques
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Consultez la [documentation Nuxt 3](https://v3.nuxtjs.org) pour en savoir plus sur le framework utilisé.
 
-## Setup
+---
 
-Make sure to install the dependencies:
+## Configuration
+
+Installez les dépendances :
 
 ```bash
 npm install

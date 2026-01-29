@@ -9,7 +9,7 @@ import type { Collections } from '@nuxt/content';
 
 const { path } = useRoute();
 const { getVoieCyclableRegex } = useUrl();
-const { getRevName } = useConfig();
+const { getProjectName } = useConfig();
 
 const regex = getVoieCyclableRegex();
 const match = path.match(regex);

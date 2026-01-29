@@ -75,7 +75,7 @@
 import type { LaneQuality, LineStringFeature } from '~/types';
 
 const { getLineColor } = useColors();
-const { getRevName, displayQuality } = useConfig();
+const { getProjectName, displayQuality } = useConfig();
 const { getDistance, typologyNames, qualityNames } = useStats();
 const { getVoieCyclablePath } = useUrl();
 
@@ -85,7 +85,7 @@ const { feature, lines } = defineProps<{
 }>();
 
 const title = computed(() => {
-  return getRevName();
+  return getProjectName();
 });
 
 function getSectionDetailsUrl(properties: LineStringFeature['properties']): string {

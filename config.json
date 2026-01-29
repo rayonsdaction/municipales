@@ -1,14 +1,14 @@
 {
-  "revName": "REV de Rennes Métropole",
+  "projectName": "Municipales 2026 - Rennes Métropole",
   "assoName": "Rayons d'Action",
   "assoLink": "https://rayonsdaction.org",
-  "slug": "rev-rennes",
+  "slug": "municipales-rennes",
   "center": [
     -1.6785189,
     48.1099998
   ],
   "zoom": 12,
-  "nbVoiesCyclables": 16,
+  "nbMunicipalites": 16,
   "colors": [
     { "line": 0,  "color": "#4e8bc1" },
     { "line": 1,  "color": "#AC4D35" },

@@ -1,8 +1,8 @@
 import config from '~/config.json';
 
 export const useConfig = () => {
-  function getRevName(): string {
-    return config.revName;
+  function getProjectName(): string {
+    return config.projectName;
   }
 
   function getAssoName(): string {
@@ -13,8 +13,8 @@ export const useConfig = () => {
     return config.assoLink;
   }
 
-  function getNbVoiesCyclables(): number {
-    return config.nbVoiesCyclables;
+  function getnbMunicipalites(): number {
+    return config.nbMunicipalites;
   }
 
   function displayQuality(): boolean {
@@ -25,5 +25,5 @@ export const useConfig = () => {
     return config.qualityDisplayOnHomePage;
   }
 
-  return { getRevName, getAssoName, getAssoLink, getNbVoiesCyclables, displayQuality, displayQualityOnHomePage };
+  return { getProjectName, getAssoName, getAssoLink, getnbMunicipalites, displayQuality, displayQualityOnHomePage };
 };

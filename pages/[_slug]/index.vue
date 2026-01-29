@@ -27,7 +27,7 @@
 <script setup lang="ts">
 const { path } = useRoute();
 const { getLineColor } = useColors();
-const { getRevName } = useConfig();
+const { getProjectName } = useConfig();
 const { getVoieCyclableRegex } = useUrl();
 
 const regex = getVoieCyclableRegex();

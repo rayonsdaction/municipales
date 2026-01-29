@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
 
-const { getRevName } = useConfig();
+const { getProjectName } = useConfig();
 
 // https://github.com/nuxt/framework/issues/3587
 definePageMeta({
@@ -24,10 +24,10 @@ const features: Ref<Collections['voiesCyclablesGeojson']['features']> = computed
   return geojsons.value.flatMap(geojson => geojson.features);
 });
 
-const description = `Découvrez la carte interactive des ${getRevName()}. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.`;
+const description = `Découvrez la carte interactive des ${getProjectName()}. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.`;
 const COVER_IMAGE_URL = 'https://cyclopolis.lavilleavelo.org/cyclopolis.png';
 useHead({
-  title: `Carte à jour du ${getRevName()}`,
+  title: `Carte à jour du ${getProjectName()}`,
   meta: [
     // description
     { key: 'description', name: 'description', content: description },

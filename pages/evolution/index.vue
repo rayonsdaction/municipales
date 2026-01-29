@@ -5,7 +5,7 @@
     </ClientOnly>
     <div>
       <div class="py-2 px-5 md:px-8 text-white bg-ra-green-600 font-semibold text-base">
-        {{ doneDistance }} km de {{ getRevName() }} réalisés
+        {{ doneDistance }} km de {{ getProjectName() }} réalisés
       </div>
       <div class="py-5 px-5 md:px-8 grid grid-cols-3 gap-3 sm:grid-cols-6">
         <div
@@ -30,7 +30,7 @@
 
 <script setup lang="ts">
 const { getAllUniqLineStrings, getDistance } = useStats();
-const { getRevName } = useConfig();
+const { getProjectName } = useConfig();
 
 // https://github.com/nuxt/framework/issues/3587
 definePageMeta({

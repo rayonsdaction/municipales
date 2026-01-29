@@ -1,6 +1,6 @@
 ## LICENCE MIT
 
-Copyright (c) 2024 La Ville à Vélo
+Copyright (c) 2026 Rayons d'Action
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -11,7 +11,7 @@ import DangerTooltip from '~/components/tooltips/DangerTooltip.vue';
 import LineTooltip from '~/components/tooltips/LineTooltip.vue';
 
 type ColoredLineStringFeature = Extract<Collections['voiesCyclablesGeojson']['features'][0], { geometry: { type: "LineString" } }> & { properties: { color: string } };
-const { getNbVoiesCyclables } = useConfig();
+const { getnbMunicipalites } = useConfig();
 
 // features plotted last are on top
 const sortOrder = [1, 3, 2, 4, 5, 6, 7, 12, 8, 9, 10, 11].reverse();
@@ -462,7 +462,7 @@ export const useMap = () => {
     const sections = features.filter(feature => 'status' in feature.properties && feature.properties.status === 'postponed');
 
     if (sections.length === 0) {
-      for (let line = 0; line <= getNbVoiesCyclables(); line++) {
+      for (let line = 0; line <= getnbMunicipalites(); line++) {
         upsertMapSource(map, `postponed-sections-${getLineColor(line)}`, []);
       }
       return;
