@@ -3,18 +3,6 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-3 sm:py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start items-center lg:w-0 lg:flex-1">
-          <NuxtLink to="/" class="flex space-x-2 items-center">
-            <span class="sr-only">Avancement du REV de Rennes Métropole</span>
-            <img
-                class="h-10 w-auto sm:h-12"
-                src="https://www.mce-info.org/wp-content/uploads/2024/02/25-Rayons-d-action.webp"
-                :alt="`logo ${getAssoName()}`"
-            >
-            <div class="text-container">
-              <div class="main-title">Municipales 2026</div>
-              <div class="sub-title">par {{getAssoName()}}</div>
-            </div>
-          </NuxtLink>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
@@ -25,56 +13,10 @@
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
-          <Popover v-slot="{ open }" class="relative">
-            <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-ra-green-600 focus:outline-none focus:ring-2 focus:ring-ra-green-600 focus:ring-offset-2']">
-              <span>Cartes détaillées</span>
-              <Icon name="mdi:chevron-down" :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
-            </PopoverButton>
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
-              <PopoverPanel v-slot="{ close }" class="absolute left-1/2 z-10 mt-3 w-screen md:w-max max-w-md -translate-x-1/2 transform px-2 sm:px-0">
-                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white">
-                  <div class="p-4 flex flex-col gap-2">
-                    <NuxtLink
-                      to="/carte-interactive"
-                      class="text-base font-medium text-gray-500 hover:text-ra-green-600"
-                      @click="close()"
-                    >
-                      Carte interactive
-                    </NuxtLink>
-                    <NuxtLink
-                      to="/plan-officiel"
-                      class="text-base font-medium text-gray-500 hover:text-ra-green-600"
-                      @click="close()"
-                    >
-                      Plan officiel
-                    </NuxtLink>
-                    <NuxtLink
-                      to="https://www.barometre-velo.fr/2025/carte/?c=35238#10.51/48.0972/-1.6761"
-                      target="_blank"
-                      class="flex align-center space-x-2 text-base font-medium text-gray-500 hover:text-ra-green-600"
-                      @click="close()"
-                    >
-                      <span>Baromètre FUB Rennes</span>
-                      <div class="flex items-center">
-                        <Icon name="mdi:launch" class="h-4 w-4" aria-hidden="true" />
-                      </div>
-                    </NuxtLink>
-                  </div>
-                </div>
-              </PopoverPanel>
-            </transition>
-          </Popover>
 
           <Popover v-slot="{ open }" class="relative">
             <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-ra-green-600 focus:outline-none focus:ring-2 focus:ring-ra-green-600 focus:ring-offset-2']">
-              <span>Lignes</span>
+              <span>Communes</span>
               <Icon name="mdi:chevron-down" :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
             </PopoverButton>
             <transition
@@ -117,13 +59,60 @@
               </PopoverPanel>
             </transition>
           </Popover>
+
+          <Popover v-slot="{ open }" class="relative">
+            <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-ra-green-600 focus:outline-none focus:ring-2 focus:ring-ra-green-600 focus:ring-offset-2']">
+              <span>Outils d'analyse</span>
+              <Icon name="mdi:chevron-down" :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
+            </PopoverButton>
+            <transition
+                enter-active-class="transition ease-out duration-200"
+                enter-from-class="opacity-0 translate-y-1"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition ease-in duration-150"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 translate-y-1"
+            >
+              <PopoverPanel v-slot="{ close }" class="absolute left-1/2 z-10 mt-3 w-screen md:w-max max-w-md -translate-x-1/2 transform px-2 sm:px-0">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white">
+                  <div class="p-4 flex flex-col gap-2">
+                    <NuxtLink
+                        to="https://cyclopolis.rayonsdaction.org"
+                        target="_blank"
+                        class="flex align-center space-x-2 text-base font-medium text-gray-500 hover:text-ra-green-600"
+                        @click="close()"
+                    >
+                      <span>Suivi du REV par Rayons d'Action</span>
+                      <div class="flex items-center">
+                        <Icon name="mdi:launch" class="h-4 w-4" aria-hidden="true" />
+                      </div>
+                    </NuxtLink>
+                    <NuxtLink
+                        to="https://www.barometre-velo.fr/2025/carte/?c=35238#10.51/48.0972/-1.6761"
+                        target="_blank"
+                        class="flex align-center space-x-2 text-base font-medium text-gray-500 hover:text-ra-green-600"
+                        @click="close()"
+                    >
+                      <span>Baromètre FUB Rennes</span>
+                      <div class="flex items-center">
+                        <Icon name="mdi:launch" class="h-4 w-4" aria-hidden="true" />
+                      </div>
+                    </NuxtLink>
+                  </div>
+                </div>
+              </PopoverPanel>
+            </transition>
+          </Popover>
         </PopoverGroup>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <NuxtLink
-            to="/blog"
-            class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-ra-green-600 hover:shadow-lg transition duration-300 transform hover:scale-105"
-          >
-            Blog
+
+        <div class="hidden md:flex md:flex-1 lg:w-0 justify-end">
+          <NuxtLink to="/" class="flex space-x-2 items-center">
+            <span class="sr-only">Municipales 2026 - Rennes Métropole</span>
+            <img
+                class="h-10 w-auto sm:h-12"
+                src="https://www.mce-info.org/wp-content/uploads/2024/02/25-Rayons-d-action.webp"
+                :alt="`logo ${getAssoName()}`"
+            >
           </NuxtLink>
         </div>
       </div>

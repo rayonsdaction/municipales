@@ -1,6 +1,6 @@
 import config from './config.json';
 
-const TITLE = `Avancement du ${config.projectName} par ${config.assoName}`;
+const TITLE = `${config.projectName} - En piste ! Par ${config.assoName}`;
 const DESCRIPTION =
   `Plateforme citoyenne et associative, par ${config.assoName}. État d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du réseau cyclable sécurisé rennais`;
 const BASE_URL = 'https://cyclopolis.rayonsdaction.org';
