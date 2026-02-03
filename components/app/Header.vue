@@ -226,48 +226,4 @@ const { data: voies } = await useAsyncData(() => {
 
 
 <style>
-.text-container {
-  margin-left: 10px;
-}
-
-.main-title {
-  color: #333333;
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif;
-}
-
-.sub-title {
-  color: #64af2e;
-  font-size: 0.9rem;
-  font-family: 'Arial', sans-serif;
-  margin-top: -5px;
-}
-
-.tooltip-container {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip-text {
-  visibility: hidden;
-  width: 120px;
-  background-color: rgba(85, 85, 85, 0.75);
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: -110%; /* Position en dessous de l'élément */
-  left: 50%;
-  margin-left: -60px;
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-.tooltip-container:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
 </style>
