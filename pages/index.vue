@@ -15,7 +15,7 @@
             </span>
               </h1>
               <p class="mt-4 text-base text-gray-600 sm:mt-5 sm:text-lg lg:text-xl">
-                Un outil pour suivre les engagements des candidats en faveur du vélo et de la marche à Rennes Métropole.
+                Plateforme de suivi des engagements des candidats en faveur du vélo et de la marche à Rennes Métropole.
               </p>
               <p class="mt-2 text-base text-gray-600 sm:text-lg" v-if="assoName">
                 Par {{ assoName }}.
