@@ -31,6 +31,7 @@ export default defineContentConfig({
         description: z.string(),
         trafic: z.string(),
         cover: z.string(),
+        lien: z.string()
       })
     }),
     voiesCyclablesGeojson: defineCollection({

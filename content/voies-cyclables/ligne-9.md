@@ -1,11 +1,8 @@
 ---
-name: REV Cesson Sud (ZA du SE)
-shortName: Cesson Sud
+name: Cesson-Sévigné
+shortName: Cesson-Sévigné
 line: 9
-from: Rennes
-to: Cesson-Sévigné
-description: Le REV Cesson permet de relier la halte SNCF de Cesson-Sévigne au sud est de Rennes en passant par le quartier de la Monniais de Cesson et l'écopôle sud-est (anciennement ZI sud-est).
-cover: https://osuny-1b4da.kxcdn.com/0rpki2xl2ixvewg8vnufslvdmvmr?format=webp&width=1500&height=0&&fit=inside&quality=50
+lien: https://barometre2025.derailleurs-calvados.fr/35/35051_cesson_sevigne.html
 ---
 
 ## Les tronçons (d'ouest en est)
