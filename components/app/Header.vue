@@ -2,10 +2,29 @@
   <Popover id="navigation-header" class="relative z-50 bg-white shadow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center py-3 sm:py-6 md:justify-start md:space-x-10">
+
+        <!-- Conteneur pour le bouton menu + logo (mobile uniquement) -->
+        <div class="md:hidden flex w-full items-center justify-between">
+          <!-- Bouton menu à gauche -->
+          <PopoverButton class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ra-green-600">
+            <span class="sr-only">Ouvrir le menu</span>
+            <Icon name="mdi:menu" class="h-6 w-6" aria-hidden="true" />
+          </PopoverButton>
+
+          <!-- Logo à droite -->
+          <NuxtLink to="/" class="flex items-center">
+            <span class="sr-only">Municipales 2026 - Rennes Métropole</span>
+            <img
+                class="h-8 w-auto"
+                src="https://www.mce-info.org/wp-content/uploads/2024/02/25-Rayons-d-action.webp"
+                :alt="`logo ${getAssoName()}`"
+            />
+          </NuxtLink>
+        </div>
+
         <div class="flex justify-start items-center lg:w-0 lg:flex-1"></div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <!-- Menu Communes -->
-
           <Popover class="relative">
             <PopoverButton
                 :class="[
@@ -175,9 +194,76 @@
           focus
           class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
       >
-        <!-- Contenu mobile inchangé -->
         <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-          <!-- ... -->
+          <!-- En-tête avec bouton de fermeture -->
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div class="-mr-2">
+                <PopoverButton
+                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-ra-green-600"
+                >
+                  <span class="sr-only">Fermer menu</span>
+                  <Icon name="mdi:close" class="h-6 w-6" aria-hidden="true" />
+                </PopoverButton>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section "Communes" -->
+          <div class="py-6 px-5">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Communes</h3>
+
+            <!-- Champ de recherche -->
+            <div class="mb-4">
+              <input
+                  v-model="mobileSearchQuery"
+                  type="text"
+                  placeholder="Rechercher une commune..."
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-ra-green-600 focus:border-transparent"
+              />
+            </div>
+
+            <!-- Liste des communes filtrées -->
+            <div class="space-y-2 max-h-60 overflow-y-auto">
+              <NuxtLink
+                  v-for="commune in mobileFilteredCommunes"
+                  :key="commune.id"
+                  :to="getVoieCyclablePath(commune.line)"
+                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-ra-green-600 hover:bg-gray-50"
+                  @click="close()"
+              >
+                {{ commune.shortName }}
+              </NuxtLink>
+
+              <!-- Message si aucune commune ne correspond -->
+              <div v-if="mobileFilteredCommunes.length === 0" class="text-center text-gray-500 py-4">
+                Aucune commune trouvée.
+              </div>
+            </div>
+          </div>
+
+          <!-- Section "Outils d'analyse" -->
+          <div class="py-6 px-5">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Outils d'analyse</h3>
+            <div class="space-y-2">
+              <NuxtLink
+                  to="https://cyclopolis.rayonsdaction.org"
+                  target="_blank"
+                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-ra-green-600 hover:bg-gray-50"
+                  @click="close()"
+              >
+                Suivi du REV par Rayons d'Action
+              </NuxtLink>
+              <NuxtLink
+                  to="https://www.barometre-velo.fr/2025/carte/?c=35238#10.51/48.0972/-1.6761"
+                  target="_blank"
+                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-ra-green-600 hover:bg-gray-50"
+                  @click="close()"
+              >
+                Baromètre FUB Rennes
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </PopoverPanel>
     </transition>
@@ -218,11 +304,19 @@ const filteredCommunes = computed(() => {
   )
 })
 
-// Ferme les résultats et réinitialise la recherche
-const closeResults = () => {
-  showResults.value = false;
-  searchQuery.value = '';
-};
+const mobileSearchQuery = ref('');
+
+// Filtre les communes pour le menu mobile
+const mobileFilteredCommunes = computed(() => {
+  if (!mobileSearchQuery.value) {
+    // Affiche les 5 premières communes par défaut
+    return (voies.value || []).slice(0, 5);
+  }
+  const query = mobileSearchQuery.value.toLowerCase();
+  return (voies.value || []).filter((voie) =>
+      voie.shortName.toLowerCase().includes(query)
+  );
+});
 </script>
 
 <style>
