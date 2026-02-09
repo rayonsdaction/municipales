@@ -32,7 +32,7 @@ const mapOptions = {
 
 const { data: geojson } = await useAsyncData(() => {
   return queryCollection('voiesCyclablesGeojson')
-    .path(`/voies-cyclables/ligne-${line}`)
+    .path(`/communes/ligne-${line}`)
     .first();
 });
 

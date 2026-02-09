@@ -26,6 +26,6 @@ const { getLineColor } = useColors();
 const { getVoieCyclablePath } = useUrl();
 
 const { data: voies } = await useAsyncData(() => {
-  return queryCollection('voiesCyclablesPage').order('line', 'ASC').all();
+  return queryCollection('communesPage').order('line', 'ASC').all();
 });
 </script>

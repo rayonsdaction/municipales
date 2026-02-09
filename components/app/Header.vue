@@ -67,7 +67,7 @@
                     <NuxtLink
                         v-for="commune in filteredCommunes.slice(0, 5)"
                         :key="commune.id"
-                        :to="getVoieCyclablePath(commune.line)"
+                        :to="commune.shortName"
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                       {{ commune.shortName }}
@@ -80,16 +80,6 @@
                     >
                       ...et {{ filteredCommunes.length - 5 }} autres
                     </div>
-                  </div>
-
-                  <!-- Lien vers le tableau de bord -->
-                  <div class="bg-ra-green-600 text-white text-center py-1">
-                    <NuxtLink
-                        to="/tableau-de-bord"
-                        class="block px-4 py-2 hover:underline"
-                    >
-                      Tableau de bord
-                    </NuxtLink>
                   </div>
                 </div>
               </PopoverPanel>
@@ -275,12 +265,11 @@
 import { ref, computed } from 'vue';
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue';
 
-const { getVoieCyclablePath } = useUrl();
 const { getAssoName } = useConfig();
 
 // Récupération des communes
 const { data: voies } = await useAsyncData(() => {
-  return queryCollection('voiesCyclablesPage').order('line', 'ASC').all();
+  return queryCollection('communesPage').order('line', 'ASC').all();
 });
 
 // État local pour la recherche

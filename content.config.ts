@@ -19,8 +19,8 @@ export default defineContentConfig({
         imageUrl: z.string().url(),
       })
     }),
-    voiesCyclablesPage: defineCollection({
-      source: 'voies-cyclables/*.md',
+    communesPage: defineCollection({
+      source: 'communes/*.md',
       type: 'page',
       schema: z.object({
         name: z.string(),
@@ -35,7 +35,7 @@ export default defineContentConfig({
       })
     }),
     voiesCyclablesGeojson: defineCollection({
-      source: 'voies-cyclables/*.json',
+      source: 'communes/*.json',
       type: 'page',
       schema: z.object({
         type: z.enum(['FeatureCollection']),

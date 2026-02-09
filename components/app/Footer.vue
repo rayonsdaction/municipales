@@ -30,8 +30,7 @@ const { getAssoName } = useConfig();
 
 const links = [
   { name: 'Mentions légales', path: '/mentions-legales' },
-  { name: 'Historique', path: '/historique' },
-  { name: 'Sites partenaires', path: '/sites-partenaires' }
+  { name: 'Historique', path: '/historique' }
 ];
 
 const socials = [
@@ -62,7 +61,7 @@ const socials = [
   },
   {
     name: 'Github',
-    href: 'https://github.com/RayonsDAction/rev-rennes',
+    href: 'https://github.com/RayonsDAction',
     icon: 'mdi:github'
   },
   {
