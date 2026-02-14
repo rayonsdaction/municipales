@@ -6,7 +6,7 @@
       </div>
       <div class="mt-1 flex justify-between items-baseline md:block lg:flex">
         <div class="flex items-baseline text-xl" :class="item.class">
-          {{ displayDistanceInKm(item.distance, precision) }}
+          {{ item.number }}
         </div>
       </div>
       <div class="text-sm" :class="item.class">
@@ -18,11 +18,10 @@
 
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
-const { getStats, displayDistanceInKm, displayPercent } = useStats();
+const { getStats, displayPercent,  } = useStats();
 
-const { voies, precision } = defineProps<{
+const { voies } = defineProps<{
   voies: Collections['voiesCyclablesGeojson'][];
-  precision?: number;
 }>();
 
 const stats = getStats(voies);

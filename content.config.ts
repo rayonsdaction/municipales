@@ -31,7 +31,8 @@ export default defineContentConfig({
         description: z.string(),
         trafic: z.string(),
         cover: z.string(),
-        lien: z.string()
+        lien: z.string(),
+        questionnaire: z.string()
       })
     }),
     voiesCyclablesGeojson: defineCollection({
@@ -90,6 +91,7 @@ export default defineContentConfig({
                 name: z.string(),
                 description: z.string(),
                 danger: z.string(),
+                engagement: z.string()
               }),
               geometry: z.object({
                 type: z.enum(['Point']),

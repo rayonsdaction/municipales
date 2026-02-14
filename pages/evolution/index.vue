@@ -29,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-const { getAllUniqLineStrings, getDistance } = useStats();
+const { getDistance } = useStats();
 const { getProjectName } = useConfig();
 
 // https://github.com/nuxt/framework/issues/3587
@@ -65,10 +65,4 @@ const features = computed(() => {
     });
 });
 
-const doneDistance = computed(() => {
-  if (!geojsons.value) return 0;
-  const allUniqFeatures = getAllUniqLineStrings([{...geojsons.value[0], features: features.value}]);
-  const doneDistance = getDistance({ features: allUniqFeatures });
-  return Math.round(doneDistance / 100) / 10;
-});
 </script>

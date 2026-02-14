@@ -72,6 +72,14 @@ export type CompteurFeature = {
   };
 };
 
+export type EngagementFeature = {
+  type: 'Feature';
+  properties: {
+    id?: string,
+    type: 'engagement',
+  }
+}
+
 export type DangerFeature = {
   type: 'Feature';
   properties: {
@@ -92,22 +100,9 @@ export type Count = { month: string, count: number };
 /**
  * type helpers
  */
-export function isLineStringFeature(feature: Collections['voiesCyclablesGeojson']['features'][0] | CompteurFeature): feature is Extract<Collections['voiesCyclablesGeojson']['features'][0], { geometry: { type: "LineString" } }> {
-  return feature.geometry.type === 'LineString';
-}
 
-export function isPointFeature(feature: Collections['voiesCyclablesGeojson']['features'][0] | CompteurFeature): feature is Extract<typeof feature, { geometry: { type: 'Point'; coordinates: [number, number] } }> {
-  return feature.geometry.type === 'Point';
-}
 
-export function isPerspectiveFeature(feature: Collections['voiesCyclablesGeojson']['features'][0] | CompteurFeature): feature is Extract<Collections['voiesCyclablesGeojson']['features'][0], { properties: { type: "perspective" } }> {
-  return isPointFeature(feature) && feature.properties.type === 'perspective';
-}
-
-export function isDangerFeature(feature: Collections['voiesCyclablesGeojson']['features'][0] | CompteurFeature): feature is Extract<Collections['voiesCyclablesGeojson']['features'][0], { properties: { type: "danger" } }> {
-  return isPointFeature(feature) && feature.properties.type === "danger";
-}
-
-export function isCompteurFeature(feature: Collections['voiesCyclablesGeojson']['features'][0] | CompteurFeature): feature is CompteurFeature {
-  return isPointFeature(feature) && ['compteur-velo', 'compteur-voiture'].includes(feature.properties.type);
+export function isEngagementFeature(feature: Collections['voiesCyclablesGeojson']['features'][0]):
+    feature is Extract<Collections['voiesCyclablesGeojson']['features'][0], { properties: { type: "engagement" } }> {
+  return feature.properties.type === "engagement";
 }

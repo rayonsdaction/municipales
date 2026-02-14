@@ -1,23 +1,33 @@
 <template>
   <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden my-8">
-    <div
-      class="bg-ra-green-600 text-xs font-medium text-white text-center p-1 leading-none"
-      :style="`width: ${stats.done.percent}%`"
-    >
-      {{ displayPercent(stats.done.percent) }}
+    <div class="flex h-6 w-full text-xs">
+      <!-- 3. Engagements avancés (anciennement 1ère partie) -->
+      <div
+          v-if="stats.engagePlus.number"
+          class="bg-ra-green-600 text-white text-center p-1 leading-none"
+          :style="`width: ${stats.engagePlus.percent}%`"
+      >
+        <span v-if="stats.engagePlus.percent > 5">{{ displayPercent(stats.engagePlus.percent) }}</span>
+      </div>
+
+      <!-- 2. Engagements standard (anciennement partie centrale) -->
+      <div
+          v-if="stats.engage.number"
+          class="bg-ra-green-400 text-white text-center p-1 leading-none"
+          :style="`width: ${stats.engage.percent}%`"
+      >
+        {{ displayPercent(stats.engage.percent) }} <!-- Affichage du % -->
+      </div>
+
+      <!-- 1. Pas d'engagements (anciennement 3ème partie) -->
+      <div
+          class="bg-ra-orange text-white text-center p-1 leading-none"
+          :style="`width: ${stats.pasEngage.percent}%`"
+      >
+        {{ displayPercent(stats.pasEngage.percent) }}
+      </div>
     </div>
-    <div
-      v-if="stats.wip.distance"
-      class="bg-ra-green-400 text-white text-center"
-      :style="`width: ${stats.wip.percent}%; background: repeating-linear-gradient(to right, #152B68, #152B68 1px, transparent 1px, transparent 3px)`"
-    />
-    <div
-      v-if="stats.postponed.distance"
-      class="bg-ra-orange text-xs font-medium text-white text-center p-1 leading-none ml-auto"
-      :style="`width: ${stats.postponed.percent}%`"
-    >
-      <span v-if="stats.postponed.percent > 5">{{ displayPercent(stats.postponed.percent) }}</span>
-    </div>
+
   </div>
 </template>
 
