@@ -218,7 +218,7 @@
               <NuxtLink
                   v-for="commune in mobileFilteredCommunes.slice(0, 3)"
                   :key="commune.id"
-                  :to="`$(encodeURIComponent(commune.shortName))`"
+                  :to="commune.shortName"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 {{ commune.shortName }}

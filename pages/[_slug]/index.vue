@@ -28,8 +28,10 @@ const { path } = useRoute();
 
 const { data: voie } = await useAsyncData(path, () => {
   const communeName = path.replace(/^\//, '');
+  const encodedCommuneName = decodeURIComponent(communeName);
+  console.log("encodedCommuneName: " + encodedCommuneName)
   return queryCollection('communesPage')
-    .where('shortName', '=', communeName)
+    .where('shortName', '=', encodedCommuneName)
     .first();
 });
 
