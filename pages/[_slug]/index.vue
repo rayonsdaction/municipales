@@ -2,14 +2,14 @@
   <div v-if="voie">
     <ContentFrame>
       <template #header>
-        <h1 class="text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 class="text-3xl text-center leading-8 font-extrabold sm:text-4xl">
             {{ voie.name }}
         </h1>
       </template>
-      <h2>Les listes candidates aux municipales</h2>
+      <h2 class="not-prose">Les listes candidates aux municipales</h2>
       <Overview :voie="voie" />
       <div v-if="voie.lien">
-        <h2>Le baromètre vélo pour cette commune</h2>
+        <h2 class="not-prose">Le baromètre vélo pour cette commune</h2>
         Consultez la fiche du baromètre vélo pour la commune de
         <a
             :href="voie.lien"

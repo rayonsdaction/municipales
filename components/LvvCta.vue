@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="py-10 px-6 bg-ra-green-600 rounded-3xl sm:py-16 sm:px-12 lg:p-16 lg:flex lg:items-center">
         <div class="lg:w-0 lg:flex-1 text-center lg:text-left">
-          <h2 class="text-3xl font-extrabold tracking-tight text-white">
+          <h2 class="text-3xl font-extrabold text-white">
             Adhérez à {{ getAssoName() }}
           </h2>
           <p class="mt-4 max-w-3xl text-lg text-indigo-100">

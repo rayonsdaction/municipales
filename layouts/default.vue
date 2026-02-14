@@ -7,6 +7,7 @@
 </template>
 
 <script setup>
+import './assets/styles/main.scss';
 
 onMounted(() => {
 });

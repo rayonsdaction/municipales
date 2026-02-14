@@ -216,11 +216,10 @@
             <!-- Liste des communes filtrées -->
             <div class="space-y-2 max-h-60 overflow-y-auto">
               <NuxtLink
-                  v-for="commune in mobileFilteredCommunes"
+                  v-for="commune in mobileFilteredCommunes.slice(0, 3)"
                   :key="commune.id"
-                  :to="getVoieCyclablePath(commune.line)"
-                  class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-ra-green-600 hover:bg-gray-50"
-                  @click="close()"
+                  :to="commune.shortName"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 {{ commune.shortName }}
               </NuxtLink>
@@ -274,7 +273,6 @@ const { data: voies } = await useAsyncData(() => {
 
 // État local pour la recherche
 const searchQuery = ref('');
-const showResults = ref(false);
 
 // Filtre les voies en fonction de la recherche
 const filteredVoies = computed(() => {
@@ -298,8 +296,8 @@ const mobileSearchQuery = ref('');
 // Filtre les communes pour le menu mobile
 const mobileFilteredCommunes = computed(() => {
   if (!mobileSearchQuery.value) {
-    // Affiche les 5 premières communes par défaut
-    return (voies.value || []).slice(0, 5);
+    // Affiche les 3 premières communes par défaut
+    return (voies.value || []).slice(0, 3);
   }
   const query = mobileSearchQuery.value.toLowerCase();
   return (voies.value || []).filter((voie) =>

@@ -1,19 +1,22 @@
 <template>
   <div>
     <div class="relative bg-gray-50 overflow-hidden">
-      <div class="relative pt-12 pb-14 sm:pb-16 lg:pb-16">
+      <div class="relative pt-12 pb-14 sm:pb-16 lg:pb-16 z-10">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="lg:grid lg:grid-cols-12 lg:gap-8">
             <!-- Texte (7 colonnes sur desktop) -->
             <div class="lg:col-span-7 lg:text-left">
-              <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl xl:text-5xl">
-            <span class="block text-gray-600 text-2xl font-semibold sm:text-3xl">
-              Municipales 2026
-            </span>
+              <h1 class="text-3xl font-extrabold sm:text-4xl xl:text-5xl">
                 <span class="block mt-2">
-              En piste ! Pour une métropole marchable et cyclable.
-            </span>
+                  Municipales 2026
+                </span>
               </h1>
+              <span class="block text-gray-600 text-2xl font-semibold sm:text-2xl">
+                En piste ! Pour une métropole marchable et cyclable.
+              </span>
+
+              <div class="my-4 h-2 bg-[#FAE524] w-60"></div>
+
               <p class="mt-4 text-base text-gray-600 sm:mt-5 sm:text-lg lg:text-xl">
                 Plateforme de suivi des engagements des candidats aux municipales en faveur du vélo et de la marche à Rennes Métropole.
               </p>
@@ -37,17 +40,17 @@
 
 
     <!-- Contenu principal -->
-    <div class="w-full bg-gray-50">
-      <div class="mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
+    <div class="w-full bg-gray-50 z-10">
+      <div class="mx-auto px-4 relative sm:px-6 lg:px-8 py-12 space-y-8 z-10">
 
         <!-- Carte Plaidoyer -->
-        <div class="bg-white px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full">
+        <div class="bg-white/70 backdrop-blur-sm px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full">
           <div class="flex items-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ra-blue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <div class="text-center flex-1">
-              <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              <h2 class="text-2xl font-extrabold sm:text-3xl">
                 Notre plaidoyer pour une métropole marchable et cyclable
               </h2>
               <p class="mt-2">
@@ -60,13 +63,13 @@
         </div>
 
         <!-- Carte Engagements -->
-        <div class="bg-white px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full">
+        <div class="bg-white/70 backdrop-blur-sm px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full">
           <div class="flex items-center space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             <div class="text-center flex-1">
-              <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              <h2 class="text-2xl font-extrabold sm:text-3xl">
                 Engagements des candidats
               </h2>
               <p class="mt-2 text-lg text-gray-500">
@@ -77,14 +80,14 @@
         </div>
 
         <!-- Carte Objectifs -->
-        <div class="bg-white px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full border-t border-gray-200 pt-6">
+        <div class="bg-white/70 backdrop-blur-sm px-10 py-6 rounded-lg shadow-sm hover:shadow-md transition-shadow w-full">
           <div class="flex items-start space-x-3">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-ra-blue shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
             <div class="flex-1">
               <div class="text-center">
-                <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+                <h2 class="text-2xl font-extrabold sm:text-3xl">
                   Notre objectif : clarifier les engagements des candidats aux municipales
                 </h2>
                 <p class="mt-2 text-lg text-gray-600 mx-auto max-w-3xl">
@@ -111,7 +114,67 @@
       </div>
     </div>
 
-    <LvvCta class="pb-10" />
+    <!-- Arc de cercle à gauche -->
+    <svg
+        class="absolute top-[-140px] left-0 transform -translate-x-[350px] z-0"
+        width="700"
+        height="600"
+        viewBox="0 0 200 500"
+        fill="none"
+    >
+      <path
+          d="M100,450 A100,100 0 0,0 0,100"
+          stroke="#f9f7bd"
+          stroke-width="50"
+          stroke-linecap="round"
+      />
+    </svg>
+    <svg
+        class="absolute -top-[60px] left-0 transform -translate-x-[200px] z-0"
+        width="300"
+        height="350"
+        viewBox="0 0 200 900"
+        fill="none"
+    >
+      <path
+          d="M50,800 A100,100 0 0,0 200,500"
+          stroke="#f9f7bd"
+          stroke-width="200"
+          stroke-linecap="round"
+      />
+    </svg>
+
+    <!-- Arc de cercle à droite -->
+    <svg
+        class="absolute top-[560px] right-0 transform translate-x-[420px] z-0"
+        width="700"
+        height="600"
+        viewBox="0 0 10 500"
+        fill="none"
+    >
+      <path
+          d="M0,450 A100,100 0 0,1 0,100"
+          stroke="#f9f7bd"
+          stroke-width="50"
+          stroke-linecap="round"
+      />
+    </svg>
+
+    <svg
+        class="absolute top-[800px] right-0 transform translate-x-[180px] z-0"
+        width="300"
+        height="350"
+        viewBox="0 0 10 900"
+        fill="none"
+    >
+      <path
+          d="M150,400 A100,100 0 0,1 0,100"
+          stroke="#f9f7bd"
+          stroke-width="200"
+          stroke-linecap="round"
+      />
+    </svg>
+    <LvvCta class="pb-10" z-10/>
   </div>
 </template>
 
