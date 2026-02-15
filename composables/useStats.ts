@@ -2,16 +2,16 @@ import type { Collections } from '@nuxt/content';
 import { isEngagementFeature } from '../types';
 
 export const useStats = () => {
-  function countEngagementsByType(voies: Collections['voiesCyclablesGeojson'][], engagementType: string): number {
+  function countEngagementsByType(voies: Collections['voiesCyclablesGeojson'][], engagementType: string,
+                                  liste: number): number {
     return voies
         .map(voie => voie.features)
         .flat()
         .filter(isEngagementFeature)
         .filter((feature, index, sections) => {
-          if (feature.properties.engagement === engagementType) {
+          if (feature.properties.engagement === engagementType && feature.properties.liste === liste) {
             return true;
           }
-          return index === sections.findIndex(section => section.properties.id === feature.properties.id);
         })
         .filter(feature => feature.properties.engagement === engagementType)
         .length;
@@ -21,11 +21,11 @@ export const useStats = () => {
     return `${percent}%`;
   }
 
-  function getStats(voies: Collections['voiesCyclablesGeojson'][]) {
+  function getStats(voies: Collections['voiesCyclablesGeojson'][], liste: number) {
 
-    const totalPasEngage = countEngagementsByType(voies, 'pasEngage');
-    const totalEngage = countEngagementsByType(voies, 'engage');
-    const totalEngagePlus = countEngagementsByType(voies, 'engagePlus');
+    const totalPasEngage = countEngagementsByType(voies, 'pasEngage', liste);
+    const totalEngage = countEngagementsByType(voies, 'engage', liste);
+    const totalEngagePlus = countEngagementsByType(voies, 'engagePlus', liste);
     const total = totalPasEngage + totalEngage + totalEngagePlus
 
     function getPercent(engagements: number) {

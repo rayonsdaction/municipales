@@ -1,33 +1,42 @@
 <template>
-  <div v-if="voie">
+  <div v-if="commune">
     <ContentFrame>
       <template #header>
         <h1 class="text-3xl text-center leading-8 font-extrabold sm:text-4xl">
-            {{ voie.name }}
+            {{ commune.name }}
         </h1>
       </template>
-      <h2 class="not-prose">Les listes candidates aux municipales</h2>
-      <Overview :voie="voie" />
-      <div v-if="voie.questionnaire" class="mt-4">
-        <h2 class="not-prose">Le questionnaire de la liste</h2>
-        Consultez les réponses détaillés de la liste candidate
-        <a
-            :href="voie.questionnaire"
-            target="_blank"
-            class="text-ra-blue hover:underline"
-        >
-          {{ voie.name }}
-        </a>
+      <div v-if="commune.listes.length === 0">
+        <h4 class="not-prose">En attente du retour des questionnaires envoyés aux candidats.</h4>
       </div>
-      <div v-if="voie.lien" class="mt-4">
+      <div v-else>
+        <h2 class="not-prose">Les listes candidates aux municipales</h2>
+        <h4>/!\ DONNEES FACTICES DE TEST /!\</h4>
+        <div v-for="liste in commune.listes" :key="liste.id" class="mt-8">
+          <h3 class="not-prose">
+            Liste : <span class="italic">{{ liste.name }}</span>
+          </h3>
+          <Overview :commune="commune" :liste="liste.id" />
+          <h4>Réponses au questionnaire</h4>
+          Consultez les réponses détaillées de la liste
+          <a
+              :href="liste.questionnaire"
+              target="_blank"
+              class="text-ra-blue hover:underline"
+          >
+            {{ liste.name }}
+          </a>
+        </div>
+      </div>
+      <div v-if="commune.lien" class="mt-10">
         <h2 class="not-prose">Le baromètre vélo pour cette commune</h2>
         Consultez la fiche du baromètre vélo pour la commune de
         <a
-            :href="voie.lien"
+            :href="commune.lien"
             target="_blank"
             class="text-ra-blue hover:underline"
         >
-          {{ voie.name }}
+          {{ commune.name }}
         </a>
       </div>
     </ContentFrame>
@@ -35,9 +44,10 @@
 </template>
 
 <script setup lang="ts">
+
 const { path } = useRoute();
 
-const { data: voie } = await useAsyncData(path, () => {
+const { data: commune } = await useAsyncData(path, () => {
   const communeName = path.replace(/^\//, '');
   const encodedCommuneName = decodeURIComponent(communeName);
   return queryCollection('communesPage')

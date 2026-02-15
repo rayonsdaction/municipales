@@ -72,14 +72,6 @@ export type CompteurFeature = {
   };
 };
 
-export type EngagementFeature = {
-  type: 'Feature';
-  properties: {
-    id?: string,
-    type: 'engagement',
-  }
-}
-
 export type DangerFeature = {
   type: 'Feature';
   properties: {

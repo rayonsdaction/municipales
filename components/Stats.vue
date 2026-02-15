@@ -18,11 +18,12 @@
 
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
-const { getStats, displayPercent,  } = useStats();
+const { getStats, displayPercent } = useStats();
 
-const { voies } = defineProps<{
+const { voies, liste } = defineProps<{
   voies: Collections['voiesCyclablesGeojson'][];
+  liste: number;
 }>();
 
-const stats = getStats(voies);
+const stats = getStats(voies, liste);
 </script>

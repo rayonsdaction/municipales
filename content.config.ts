@@ -32,7 +32,13 @@ export default defineContentConfig({
         trafic: z.string(),
         cover: z.string(),
         lien: z.string(),
-        questionnaire: z.string()
+        listes: z.array(
+            z.object({
+              id: z.number(),
+              name: z.string(),
+              questionnaire: z.string(),
+            })
+        ),
       })
     }),
     voiesCyclablesGeojson: defineCollection({
@@ -91,7 +97,8 @@ export default defineContentConfig({
                 name: z.string(),
                 description: z.string(),
                 danger: z.string(),
-                engagement: z.string()
+                engagement: z.string(),
+                liste: z.string()
               }),
               geometry: z.object({
                 type: z.enum(['Point']),
@@ -100,48 +107,6 @@ export default defineContentConfig({
             })
           ])
         )
-      })
-    }),
-    compteurs: defineCollection({
-      source: 'compteurs/**/*.json',
-      type: 'page',
-      schema: z.object({
-        name: z.string(),
-        description: z.string(),
-        arrondissement: z.string(),
-        idPdc: z.number(),
-        cyclopolisId: z.string().optional(),
-        coordinates: z.array(z.number()).length(2),
-        lines: z.array(z.number()).optional(),
-        counts: z.array(
-          z.object({
-            month: z.string(),
-            count: z.number(),
-          })
-        )
-      })
-    }),
-    sitesPartenaires: defineCollection({
-      source: 'sites-partenaires/**/*.md',
-      type: 'page',
-      schema: z.object({
-        imageUrl: z.string().url(),
-        title: z.string(),
-        description: z.string(),
-        city: z.string(),
-        link: z.string().url(),
-        index: z.number(),
-      })
-    }),
-    cartesMinutes: defineCollection({
-      source: 'cartes-minutes/**/*.md',
-      type: 'page',
-      schema: z.object({
-        imageUrl: z.string().url(),
-        title: z.string(),
-        description: z.string(),
-        link: z.string().url(),
-        index: z.number(),
       })
     })
   }

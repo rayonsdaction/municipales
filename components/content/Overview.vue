@@ -1,9 +1,9 @@
 <template>
   <div>
+    <h4 style="text-align: left">Aperçu des engagements</h4>
     <div v-if="geojson">
-      <ProgressBar :voies="[geojson]" />
-      <Stats :voies="[geojson]" :precision="1" />
-      <StatsQuality v-if="displayQuality()" :voies="[geojson]" :precision="1" />
+      <ProgressBar :voies="[geojson]" :liste=liste />
+      <Stats :voies="[geojson]" :liste=liste :precision="1" />
     </div>
   </div>
 </template>
@@ -13,13 +13,12 @@ import type { Collections } from '@nuxt/content';
 
 
 const { path } = useRoute();
-const { displayQuality } = useConfig();
 
-const { voie } = defineProps<{ voie: Collections['communesPage']}>();
+const { commune, liste } = defineProps<{ commune: Collections['communesPage']; liste: number;}>();
 
 const { data: geojson } = await useAsyncData(`geojson-${path}`, () => {
   return queryCollection('voiesCyclablesGeojson')
-    .path(voie.path)
+    .path(commune.path)
     .first();
 });
 </script>
