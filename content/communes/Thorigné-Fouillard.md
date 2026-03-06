@@ -5,8 +5,10 @@ lien: https://barometre2025.derailleurs-calvados.fr/35/35334_thorigne_fouillard.
 listes: 
   - id: 1
     name: Construisons l'Avenir Ensemble
+    tete: Benoît Claudon
     questionnaire: /doc/réponses/Thorigné-Fouillard/questionnaire-RA-TF-CAE.pdf
   - id: 2
     name: Thorigné-Fouillard, la dynamique continue avec vous !
+    tete: Gaël LEFEUVRE
     questionnaire: /doc/réponses/Thorigné-Fouillard/questionnaire-RA-TF-DCAV.pdf
 ---

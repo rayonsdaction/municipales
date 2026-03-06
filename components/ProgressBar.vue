@@ -1,24 +1,24 @@
 <template>
-  <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden my-8">
+  <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden mt-8 mb-3">
     <div class="flex h-6 w-full text-xs">
       <div
           v-if="stats.engagePlus.number"
-          class="bg-ra-green-600 text-white text-center p-1 leading-none"
+          class="bg-ra-green-600 text-white text-center py-1 leading-none"
           :style="`width: ${stats.engagePlus.percent}%`"
       >
-        <span v-if="stats.engagePlus.percent > 5">{{ displayPercent(stats.engagePlus.percent) }}</span>
+        {{ displayPercent(stats.engagePlus.percent) }}
       </div>
 
       <div
           v-if="stats.engage.number"
-          class="bg-ra-green-400 text-white text-center p-1 leading-none"
+          class="bg-ra-green-400 text-white text-center py-1 leading-none"
           :style="`width: ${stats.engage.percent}%`"
       >
         {{ displayPercent(stats.engage.percent) }}
       </div>
 
       <div
-          class="bg-ra-orange text-white text-center p-1 leading-none"
+          class="bg-ra-orange text-white text-center py-1 leading-none"
           :style="`width: ${stats.pasEngage.percent}%`"
       >
         {{ displayPercent(stats.pasEngage.percent) }}

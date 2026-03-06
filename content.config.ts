@@ -28,6 +28,7 @@ export default defineContentConfig({
             z.object({
               id: z.number(),
               name: z.string(),
+              tete: z.string(),
               questionnaire: z.string(),
             })
         ),
