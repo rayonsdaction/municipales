@@ -11,10 +11,9 @@
       </div>
       <div v-else>
         <h2 class="not-prose">Les listes candidates aux municipales</h2>
-        <h4>/!\ DONNEES FACTICES DE TEST /!\</h4>
         <div v-for="liste in commune.listes" :key="liste.id" class="mt-8">
           <h3 class="not-prose">
-            Liste : <span class="italic">{{ liste.name }}</span>
+            <span class="italic">{{ liste.name }}</span>
           </h3>
           <Overview :commune="commune" :liste="liste.id" />
           <h4>Réponses au questionnaire</h4>
