@@ -9,6 +9,6 @@ listes:
     questionnaire: /doc/réponses/Thorigné-Fouillard/questionnaire-RA-TF-CAE.pdf
   - id: 2
     name: Thorigné-Fouillard, la dynamique continue avec vous !
-    tete: Gaël LEFEUVRE
+    tete: Gaël Lefeuvre
     questionnaire: /doc/réponses/Thorigné-Fouillard/questionnaire-RA-TF-DCAV.pdf
 ---
