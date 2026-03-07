@@ -1,5 +1,6 @@
 <template>
-  <div class="grid grid-cols-3 rounded-lg overflow-hidden shadow-sm bg-gray-50 gap-px md:grid-cols-3">
+  <div class="grid grid-cols-3 rounded-lg overflow-hidden shadow-sm bg-gray-50 gap-px md:grid-cols-3"
+       v-if="stats.engagePlus.number && stats.engage.number && stats.pasEngage.number">
     <div v-for="item in stats" :key="item.name" class="px-4 py-3 sm:p-4 bg-white">
       <div class="text-xs font-medium text-gray-500">
         {{ item.name }}

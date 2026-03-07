@@ -24,6 +24,7 @@ export default defineContentConfig({
         trafic: z.string(),
         cover: z.string(),
         lien: z.string(),
+        disclaimer: z.boolean(),
         listes: z.array(
             z.object({
               id: z.number(),
