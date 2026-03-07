@@ -12,6 +12,26 @@
       </div>
 
       <div v-else>
+        <div class="my-6 p-4 bg-blue-50/50 rounded-lg border-l-4 border-ra-blue">
+          <div class="flex items-start space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-ra-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="text-sm text-gray-700">
+              <p class="font-medium text-gray-800">
+                À propos des synthèses d’engagements
+              </p>
+              <p class="mt-1">
+                Les résumés globaux présentés ici sont générés automatiquement à partir des réponses des candidats.
+                <span class="font-semibold">
+          Ils ne reflètent pas toujours avec précision la nuance ou l’étendue réelle des engagements pris.
+        </span>
+                Pour une analyse complète, nous vous invitons à consulter les réponses détaillées de chaque liste (PDF).
+              </p>
+            </div>
+          </div>
+        </div>
+
         <h2 class="not-prose">Les listes candidates aux municipales</h2>
         <div v-for="liste in commune.listes" :key="liste.id" class="mt-8">
           <h3 class="not-prose">
