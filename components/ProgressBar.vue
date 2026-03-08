@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden mt-8 mb-3"
-       v-if="stats.engagePlus.number && stats.engage.number && stats.pasEngage.number">
+       v-if="stats.engagePlus.number || stats.engage.number || stats.pasEngage.number">
     <div class="flex h-6 w-full text-xs">
       <div
           v-if="stats.engagePlus.number"
