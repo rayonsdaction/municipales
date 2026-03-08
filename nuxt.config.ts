@@ -1,10 +1,9 @@
 import config from './config.json';
 
 const TITLE = `${config.projectName} - En piste ! Par ${config.assoName}`;
-const DESCRIPTION =
-  `Plateforme citoyenne et associative, par ${config.assoName}. État d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du réseau cyclable sécurisé rennais`;
-const BASE_URL = 'https://cyclopolis.rayonsdaction.org';
-const COVER_IMAGE_URL = 'https://cyclopolis.lavilleavelo.org/cyclopolis.png';
+const DESCRIPTION = `Plateforme de suivi des engagements des candidats aux municipales en faveur du vélo et de la marche à Rennes Métropole.`;
+const BASE_URL = 'https://municipales2026.rayonsdaction.org';
+const COVER_IMAGE_URL = 'https://municipales2026.rayonsdaction.org/images/plaidoyer2026.png';
 
 export default defineNuxtConfig({
   app: {
