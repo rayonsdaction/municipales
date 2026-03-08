@@ -34,19 +34,19 @@ export const useStats = () => {
 
     return {
       engagePlus: {
-        name: 'Engagement fort',
+        name: 'Engagements forts',
         number: totalEngagePlus,
         percent: getPercent(totalEngagePlus),
         class: 'text-ra-green-600 font-semibold'
       },
       engage: {
-        name: 'Engagement minimal',
+        name: 'Engagements',
         number: totalEngage,
         percent: getPercent(totalEngage),
         class: 'text-ra-green-400 font-normal'
       },
       pasEngage: {
-        name: 'Pas d\'engagement',
+        name: 'Pas d\'engagements',
         number: totalPasEngage,
         percent: getPercent(totalPasEngage),
         class: 'text-ra-orange font-semibold'

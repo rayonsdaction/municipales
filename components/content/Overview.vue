@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h4 style="text-align: left">Aperçu des engagements</h4>
     <div v-if="geojson">
       <ProgressBar :voies="[geojson]" :liste=liste />
       <Stats :voies="[geojson]" :liste=liste :precision="1" />
