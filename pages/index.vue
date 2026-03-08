@@ -73,7 +73,7 @@
                 Engagements des candidats
               </h2>
               <p class="text-gray-700">
-                <span class="font-medium text-gray-900">Thorigné-Fouillard, Bruz :</span>
+                <span class="font-medium text-gray-900">Rennes, Thorigné-Fouillard, Bruz :</span>
                 <span class="text-ra-green ml-1">▲ Résultats disponibles</span>
               </p>
               <p class="text-gray-600 text-sm mt-1">

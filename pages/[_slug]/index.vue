@@ -33,16 +33,19 @@
         </div>
 
         <h2 class="not-prose">Les listes candidates aux municipales</h2>
-        <div v-for="liste in commune.listes" :key="liste.id" class="mt-8">
+
+        <div
+            v-for="liste in commune.listes.filter(l => l.questionnaire)"
+            :key="liste.id"
+            class="mt-8"
+        >
           <h3 class="not-prose">
             <span class="italic text-gray-700 font-semibold text-xl">{{ liste.name }}</span>
           </h3>
-          <span class="italic text-gray-700">{{liste.tete}}</span>
+          <span class="italic text-gray-700">{{ liste.tete }}</span>
 
-          <!-- Aperçu des engagements (progress bar) -->
           <Overview :commune="commune" :liste="liste.id" />
 
-          <!-- Texte et bouton pour accéder au PDF -->
           <span class="mt-4 text-center text-gray-700">
             Pour en savoir plus, consultez les engagements et les réponses détaillées de la liste
             <span class="italic">{{ liste.name }}</span> :
@@ -57,6 +60,13 @@
             </a>
           </div>
           <div class="my-6 border-t-2 border-gray-500"></div>
+        </div>
+
+        <div v-if="listesSansQuestionnaire.length > 0" class="mt-8">
+          <p class="not-prose font-medium">Les listes ci-dessous n’ont pas retourné le questionnaire envoyé. Leurs engagements ne sont donc pas présentés ici.</p>
+          <div v-for="liste in listesSansQuestionnaire" :key="liste.id" class="mt-2">
+            <p class="not-prose">- {{ liste.name }}, {{ liste.tete }}</p>
+          </div>
         </div>
       </div>
 
@@ -75,9 +85,9 @@
   </div>
 </template>
 
-
-
 <script setup lang="ts">
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 
 const { path } = useRoute();
 
@@ -85,8 +95,11 @@ const { data: commune } = await useAsyncData(path, () => {
   const communeName = path.replace(/^\//, '');
   const encodedCommuneName = decodeURIComponent(communeName);
   return queryCollection('communesPage')
-    .where('shortName', '=', encodedCommuneName)
-    .first();
+      .where('shortName', '=', encodedCommuneName)
+      .first();
 });
 
+const listesSansQuestionnaire = computed(() => {
+  return commune.value?.listes.filter(l => !l.questionnaire) || [];
+});
 </script>
