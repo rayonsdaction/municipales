@@ -73,9 +73,21 @@
                 Engagements des candidats
               </h2>
               <p class="text-gray-700">
-                <span class="font-medium text-gray-900">Rennes, Thorigné-Fouillard, Pacé, Cesson-Sévigné, Noyal-sur-Vilaine, Chartres-de-Bretagne, Vezin-le-Coquet, Saint-Grégoire, Chantepie, Bruz :</span>
-                <p class="text-ra-green ml-1">▲ Réponses disponibles</p>
+                <span class="font-medium text-gray-900">
+                  <nuxt-link to="/Rennes" class="text-ra-green hover:underline">Rennes</nuxt-link>,
+                  <nuxt-link to="/Thorigné-Fouillard" class="text-ra-green hover:underline">Thorigné-Fouillard</nuxt-link>,
+                  <nuxt-link to="/Pacé" class="text-ra-green hover:underline">Pacé</nuxt-link>,
+                  <nuxt-link to="/Cesson-Sévigné" class="text-ra-green hover:underline">Cesson-Sévigné</nuxt-link>,
+                  <nuxt-link to="/Noyal-sur-Vilaine" class="text-ra-green hover:underline">Noyal-sur-Vilaine</nuxt-link>,
+                  <nuxt-link to="/Chartres de Bretagne" class="text-ra-green hover:underline">Chartres-de-Bretagne</nuxt-link>,
+                  <nuxt-link to="/Vezin" class="text-ra-green hover:underline">Vezin-le-Coquet</nuxt-link>,
+                  <nuxt-link to="/Saint-Grégoire" class="text-ra-green hover:underline">Saint-Grégoire</nuxt-link>,
+                  <nuxt-link to="/Chantepie" class="text-ra-green hover:underline">Chantepie</nuxt-link>,
+                  <nuxt-link to="/Bruz" class="text-ra-green hover:underline">Bruz</nuxt-link> :
+                </span>
+                <p class="text-ra-green ml-1 inline">▲ Réponses disponibles</p>
               </p>
+
               <p class="text-gray-600 text-sm mt-1">
                 Collecte toujours en cours pour les autres communes.
               </p>
