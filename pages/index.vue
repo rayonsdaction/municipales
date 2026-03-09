@@ -73,7 +73,7 @@
                 Engagements des candidats
               </h2>
               <p class="text-gray-700">
-                <span class="font-medium text-gray-900">Rennes, Thorigné-Fouillard, Pacé, Cesson-Sévigné, Noyal-sur-Vilaine, Chartres-de-Bretagne, Vezin-le-Coquet, Saint-Grégoire, Bruz :</span>
+                <span class="font-medium text-gray-900">Rennes, Thorigné-Fouillard, Pacé, Cesson-Sévigné, Noyal-sur-Vilaine, Chartres-de-Bretagne, Vezin-le-Coquet, Saint-Grégoire, Chantepie, Bruz :</span>
                 <p class="text-ra-green ml-1">▲ Réponses disponibles</p>
               </p>
               <p class="text-gray-600 text-sm mt-1">
