@@ -11,6 +11,7 @@ listes:
   - id: 2
     name: Vezin Ensemble
     tete: Jean-Louis Dubreuil
+    questionnaire: /doc/réponses/Vezin/Réponse - Vezin Ensemble.pdf
   - id: 3
     name: Vezin Nouvel Élan
     tete: Paul Le Meut
