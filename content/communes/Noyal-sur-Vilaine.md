@@ -11,6 +11,7 @@ listes:
   - id: 2
     name: Noyal avec vous
     tete: Stéphane Lenfant
+    questionnaire: /doc/réponses/Noyal-sur-Vilaine/Questionnaire - Noyal-sur-Vilaine - Noyal avec vous.pdf
   - id: 3
     name: Unis pour Noyal
     tete: Marielle Muret-Baudoin
