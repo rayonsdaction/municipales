@@ -11,4 +11,5 @@ listes:
   - id: 2
     name: Chantepie, c'est vous !
     tete: Grégoire Le Blond
+    questionnaire: /doc/réponses/Chantepie/Questionnaire - Chantepie - Chantepie c'est vous.pdf
 ---
