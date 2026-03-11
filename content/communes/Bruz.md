@@ -11,5 +11,5 @@ listes:
   - id: 2
     name: Un nouvel élan pour Bruz
     tete: Jean-René Houssin
-    questionnaire: /doc/réponses/Bruz/Questionnaire - Bruz - Bruz avec vous.pdf
+    questionnaire: /doc/réponses/Bruz/Questionnaire - Bruz - Un nouvel élan pour Bruz.pdf
 ---
